@@ -17,7 +17,7 @@ The lists are refreshed **weekly** using [ccxt](https://github.com/ccxt/ccxt) an
 
 ---
 
-## 📂 Outputs
+## Supported exchanges
 
 -   **BINANCE**
 -   **OKX**
@@ -27,7 +27,11 @@ The lists are refreshed **weekly** using [ccxt](https://github.com/ccxt/ccxt) an
 -   **BYBIT**
 -   **WOO**
 
-The lists are refreshed **weekly** using [ccxt](https://github.com/ccxt/ccxt) and GitHub Actions.
+---
+
+## 🌍 Notes on GitHub Actions
+
+GitHub Actions runs on a hosted runner and may be subject to geographic or API restrictions for some exchange endpoints, especially Binance and Bybit. For the most complete refresh, run the generator locally with `npm run generate`.
 
 ---
 

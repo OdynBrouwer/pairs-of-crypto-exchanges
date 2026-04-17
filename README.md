@@ -1,8 +1,23 @@
-# BTC / USD / USDT Pairs of Crypto Exchanges
+# Pairs of Crypto Exchanges
 
 ![Refresh cadence](https://img.shields.io/badge/refresh-weekly-brightgreen)
 
-**BTC / USD / USDT Pairs of Crypto Exchanges** is an open-source project that automatically fetches and updates **TradingView-importable** watchlists of BTC-, USD- and USDT-quoted **spot** pairs from:
+**Pairs of Crypto Exchanges** automatically fetches and updates **TradingView-importable** watchlists for BTC-, USD- and USDT-quoted **spot** pairs. The project gathers fresh exchange data and publishes plain-text symbols lists for easy TradingView import.
+
+The lists are refreshed **weekly** using [ccxt](https://github.com/ccxt/ccxt) and GitHub Actions.
+
+---
+
+## 📦 Project release
+
+- **v1.0.0** — initial import to `OdynBrouwer/pairs-of-crypto-exchanges`
+- Added support for **Bybit** and **WOO**
+- Supports BTC, USD, and USDT watchlists across multiple exchanges
+- Switched CI to `npm` and removed old `pnpm` metadata
+
+---
+
+## 📂 Outputs
 
 -   **BINANCE**
 -   **OKX**
@@ -49,8 +64,8 @@ The lists are refreshed **weekly** using [ccxt](https://github.com/ccxt/ccxt) an
 ## 🛠 Local build
 
 ```bash
-git clone <your-repo-url>
-cd btc-pairs-of-crypto-exchanges
+git clone https://github.com/OdynBrouwer/pairs-of-crypto-exchanges.git
+cd pairs-of-crypto-exchanges
 npm install
 npm run generate
 # Outputs in lists/*.txt

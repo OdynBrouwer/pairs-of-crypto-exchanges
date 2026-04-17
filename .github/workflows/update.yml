@@ -1,0 +1,36 @@
+name: Update BTC Watchlists (weekly)
+
+on:
+    schedule:
+        - cron: "7 3 * * 1" # every Monday 03:07 UTC
+    workflow_dispatch:
+
+permissions:
+    contents: write
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              with:
+                  persist-credentials: true
+
+            - uses: actions/setup-node@v4
+              with:
+                  node-version: 20
+                  registry-url: https://registry.npmjs.org
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Build watchlists
+              run: npm run generate
+
+            - name: Commit & push if changed
+              uses: stefanzweifel/git-auto-commit-action@v5
+              with:
+                  commit_message: "chore: weekly refresh BTC watchlists"
+                  file_pattern: |
+                      lists/*.txt
+                      META.json

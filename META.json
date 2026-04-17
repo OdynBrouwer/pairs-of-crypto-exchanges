@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-04-16T13:39:03.558Z",
+  "exchanges": [
+    "BINANCE",
+    "OKX",
+    "MEXC",
+    "KUCOIN",
+    "COINBASE",
+    "BYBIT",
+    "WOO"
+  ],
+  "quotes": [
+    "BTC",
+    "USD",
+    "USDT"
+  ],
+  "files": [
+    "lists/BINANCE_BTC_PAIRS.txt",
+    "lists/OKX_BTC_PAIRS.txt",
+    "lists/MEXC_BTC_PAIRS.txt",
+    "lists/KUCOIN_BTC_PAIRS.txt",
+    "lists/COINBASE_BTC_PAIRS.txt",
+    "lists/BYBIT_BTC_PAIRS.txt",
+    "lists/ALL_BTC_PAIRS.txt",
+    "lists/BINANCE_USD_PAIRS.txt",
+    "lists/OKX_USD_PAIRS.txt",
+    "lists/COINBASE_USD_PAIRS.txt",
+    "lists/BYBIT_USD_PAIRS.txt",
+    "lists/ALL_USD_PAIRS.txt",
+    "lists/BINANCE_USDT_PAIRS.txt",
+    "lists/OKX_USDT_PAIRS.txt",
+    "lists/MEXC_USDT_PAIRS.txt",
+    "lists/KUCOIN_USDT_PAIRS.txt",
+    "lists/COINBASE_USDT_PAIRS.txt",
+    "lists/BYBIT_USDT_PAIRS.txt",
+    "lists/WOO_USDT_PAIRS.txt",
+    "lists/ALL_USDT_PAIRS.txt"
+  ],
+  "binanceHostsTried": [
+    "api1.binance.com",
+    "api-gcp.binance.com",
+    "api4.binance.com",
+    "api.binance.com"
+  ]
+}

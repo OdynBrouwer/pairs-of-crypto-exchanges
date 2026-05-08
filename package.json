@@ -8,7 +8,7 @@
 		"generate": "node scripts/build-btc-watchlist.mjs"
 	},
 	"dependencies": {
-		"ccxt": "^4.5.3"
+		"ccxt": "^4.5.52"
 	},
 	"engines": {
 		"node": ">=18"
